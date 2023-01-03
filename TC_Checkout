@@ -23,10 +23,9 @@ WebUI.maximizeWindow()
 
 WebUI.navigateToUrl('https://www.saucedemo.com/')
 
-WebUI.setText(findTestObject('Si Cepat/div_Accepted usernames'), findTestData('Login Data').getValue(1, 1))
+WebUI.setText(findTestObject('Si Cepat/div_Accepted usernames'), username)
 
-WebUI.setText(findTestObject('Si Cepat/div_Password for all userssecret_sauce'), findTestData('Login Data').getValue(2, 
-        1))
+WebUI.setText(findTestObject('Si Cepat/div_Password for all userssecret_sauce'), password)
 
 WebUI.click(findTestObject('Si Cepat/btn_Login'))
 
@@ -49,4 +48,6 @@ WebUI.scrollToElement(findTestObject('Si Cepat/button_Finish'), 0)
 WebUI.click(findTestObject('Si Cepat/button_Finish'))
 
 WebUI.click(findTestObject('Si Cepat/button_Back Home'))
+
+WebUI.closeBrowser()
 
